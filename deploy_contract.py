@@ -5,7 +5,7 @@ from eth_account import Account
 from solcx import compile_source, install_solc
 
 # Private key (directly included in the code)
-PRIVATE_KEY = '0x4ef8433a2a51773f5fc2069c90328ab3f86f6960eab650efbaf5db7310f20076'  # Replace with your actual private key
+PRIVATE_KEY = 'Private Key'  # Replace with your actual private key
 
 # Connect to zkSync's Sepolia testnet
 zkSync_sepolia_testnet_url = "https://sepolia.era.zksync.dev"
@@ -146,7 +146,7 @@ w3.eth.default_account = account.address
 TransactionContract = w3.eth.contract(abi=contract_abi, bytecode=contract_bytecode)
 
 # Set up the constructor parameters
-signers = ["0x5f8267F0AF048B478D4ad17423A4C8a098f87C40"]  # Add your actual signer addresses
+signers = ["Signer Address"]  # Add your actual signer addresses
 required_approvals = 1
 delay = 3600  # delay in seconds (e.g., 3600 seconds = 1 hour)
 
